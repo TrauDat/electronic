@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="main-frame" stylesheets="@style/application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.traudat.app.views.MainFrame">
+   <children>
+      <VBox fx:id="sideBar" styleClass="side-bar">
+         <children>
+            <VBox id="Home" onMouseClicked="#clickMenu" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <SVGPath content="M32 18.451l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18v12h-8v-8h-8v8h-8v-12l12-9z" />
+                  <Label text="Home" />
+               </children>
+               <styleClass>
+                  <String fx:value="side-bar-menu" />
+                  <String fx:value="active" />
+               </styleClass>
+            </VBox>
+            <VBox id="Elic" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickMenu" prefHeight="200.0" prefWidth="100.0" styleClass="side-bar-menu">
+               <children>
+                  <SVGPath content="M32 18.451l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18v12h-8v-8h-8v8h-8v-12l12-9z" />
+                  <Label text="ELIC" />
+               </children>
+            </VBox>
+            <VBox id="Sales" layoutX="10.0" layoutY="80.0" onMouseClicked="#clickMenu" prefHeight="200.0" prefWidth="100.0" styleClass="side-bar-menu">
+               <children>
+                  <SVGPath content="M32 18.451l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18v12h-8v-8h-8v8h-8v-12l12-9z" />
+                  <Label text="SALES" />
+               </children>
+            </VBox>
+            <VBox id="Category" layoutX="10.0" layoutY="150.0" onMouseClicked="#clickMenu" prefHeight="200.0" prefWidth="100.0" styleClass="side-bar-menu">
+               <children>
+                  <SVGPath content="M32 18.451l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18v12h-8v-8h-8v8h-8v-12l12-9z" />
+                  <Label text="CATEGORY" />
+               </children>
+            </VBox>
+            <VBox id="Product" layoutX="10.0" layoutY="220.0" onMouseClicked="#clickMenu" prefHeight="200.0" prefWidth="100.0" styleClass="side-bar-menu">
+               <children>
+                  <SVGPath content="M32 18.451l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18v12h-8v-8h-8v8h-8v-12l12-9z" />
+                  <Label text="PRODUCT" />
+               </children>
+            </VBox>
+            <VBox id="Exit" layoutX="10.0" layoutY="290.0" onMouseClicked="#clickMenu" prefHeight="200.0" prefWidth="100.0" styleClass="side-bar-menu">
+               <children>
+                  <SVGPath content="M32 18.451l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18v12h-8v-8h-8v8h-8v-12l12-9z" />
+                  <Label text="EXIT" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <StackPane fx:id="contentView" HBox.hgrow="ALWAYS" />
+   </children>
+</HBox>

@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:hsqldb:file:database/elic
+    username: sa
+    password: sa
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true

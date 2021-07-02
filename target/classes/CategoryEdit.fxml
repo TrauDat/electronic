@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+
+<?import javafx.scene.control.TextField?>
+<HBox styleClass="dialog" stylesheets="@style/application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.traudat.app.views.popup.CategoryEdit">
+   <children>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="dialog-icon">
+         <children>
+            <SVGPath content="M38.5 0h-12c-0.825 0-1.977 0.477-2.561 1.061l-14.879 14.879c-0.583 0.583-0.583 1.538 0 2.121l12.879 12.879c0.583 0.583 1.538 0.583 2.121 0l14.879-14.879c0.583-0.583 1.061-1.736 1.061-2.561v-12c0-0.825-0.675-1.5-1.5-1.5zM31 12c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z M4 17l17-17h-2.5c-0.825 0-1.977 0.477-2.561 1.061l-14.879 14.879c-0.583 0.583-0.583 1.538 0 2.121l12.879 12.879c0.583 0.583 1.538 0.583 2.121 0l0.939-0.939-13-13z" scaleX="3.0" scaleY="3.0" />
+         </children>
+      </VBox>
+      <VBox HBox.hgrow="ALWAYS">
+         <children>
+            <Label fx:id="title" styleClass="dialog-title" text="Label" />
+            <VBox styleClass="dialog-message-box">
+               <children>
+                  <Label text="Category Name:" />
+                  <TextField fx:id="name" promptText="Enter Category Name" />
+               </children>
+            </VBox>
+            <HBox>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#close" styleClass="wid-120" text="Close" />
+                  <Button layoutX="290.0" layoutY="10.0" mnemonicParsing="false" onAction="#save" styleClass="wid-120" text="Save" />
+               </children>
+               <styleClass>
+                  <String fx:value="dialog-button-box" />
+                  <String fx:value="sp-10" />
+               </styleClass>
+            </HBox>
+         </children>
+         <styleClass>
+            <String fx:value="dialog-body" />
+            <String fx:value="sp-10" />
+         </styleClass>
+      </VBox>
+   </children>
+</HBox>
